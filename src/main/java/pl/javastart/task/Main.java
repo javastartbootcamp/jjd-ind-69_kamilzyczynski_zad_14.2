@@ -1,13 +1,12 @@
 package pl.javastart.task;
 
 import java.io.IOException;
-import java.util.Queue;
 
 public class Main {
 
     public static void main(String[] args) throws IOException {
         VehicleControlStation vehicleControlStation = new VehicleControlStation();
-        Queue<Vehicle> vehicles = vehicleControlStation.getVehicles();
+
 //        vehicles.add(new Vehicle("Car", "BMW", "M5", 2020, 10_000,
 //                "WVM200001212"));
 //        vehicles.add(new Vehicle("Truck", "Volvo", "S500", 2015, 500_000,
@@ -16,7 +15,5 @@ public class Main {
 //                "VIB4124003232"));
 
         vehicleControlStation.run();
-
-        System.out.println(vehicles);
     }
 }
