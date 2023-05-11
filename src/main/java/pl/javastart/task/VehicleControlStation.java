@@ -24,11 +24,9 @@ public class VehicleControlStation {
     private void processOption(int choice) throws IOException {
         switch (choice) {
             case EXIT -> {
-                if (!vehicles.isEmpty()) {
-                    clearFile();
-                    save();
-                    vehicles.clear();
-                }
+                clearFile();
+                save();
+                vehicles.clear();
             }
             case ADD_NEW_VEHICLE -> {
                 Vehicle vehicle = addNewVehicle();
